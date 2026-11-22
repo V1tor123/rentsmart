@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1435" width="960" height="1435" font-family="Arial, Helvetica, sans-serif">
+<title>Fluxograma RentSmart - Parte 2: cálculo, exibição e CSV</title>
+<defs><marker id="ponta" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 z" fill="#222"/></marker></defs>
+<style>
+.term{fill:#d9ead3;stroke:#274e13;stroke-width:2}
+.proc{fill:#ffffff;stroke:#222;stroke-width:2}
+.io{fill:#fff2cc;stroke:#7f6000;stroke-width:2}
+.lv{fill:#cfe2f3;stroke:#0b5394;stroke-width:2}
+.dec{fill:#fce5cd;stroke:#b45f06;stroke-width:2}
+.prep{fill:#ead1dc;stroke:#741b47;stroke-width:2}
+.doc{fill:#d0e0e3;stroke:#134f5c;stroke-width:2}
+.conn{fill:#fff;stroke:#222;stroke-width:2}
+.seta{fill:none;stroke:#222;stroke-width:2}
+text{fill:#111}
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+<circle cx="480" cy="30" r="20" class="conn"/><text x="480" y="35.95" text-anchor="middle" font-size="17" font-weight="bold">A</text>
+<polygon points="288,82 708,82 672,148 252,148" class="lv"/><text x="480" y="110.45" text-anchor="middle" font-size="17">Ler número de parcelas da</text><text x="480" y="131.45" text-anchor="middle" font-size="17">taxa contratual (1 a 5)</text>
+<rect x="245" y="189" width="470" height="62" class="proc"/><text x="480" y="215.45" text-anchor="middle" font-size="17">Criar TaxaContratual(n): dividir R$ 2.000,00</text><text x="480" y="236.45" text-anchor="middle" font-size="17">em n parcelas (centavos restantes nas primeiras)</text>
+<rect x="300" y="285" width="360" height="50" class="proc"/><text x="480" y="315.95" text-anchor="middle" font-size="17">Criar Orcamento(imóvel, taxa)</text>
+<rect x="245" y="369" width="470" height="62" class="proc"/><text x="480" y="395.45" text-anchor="middle" font-size="17">subtotal = aluguel-base + adicionais</text><text x="480" y="416.45" text-anchor="middle" font-size="17">(imovel.calcular_adicionais())</text>
+<polygon points="480,462 630,520 480,578 330,520" class="dec"/><text x="480" y="515.45" text-anchor="middle" font-size="17">Apartamento e</text><text x="480" y="536.45" text-anchor="middle" font-size="17">cliente sem crianças?</text>
+<rect x="680" y="489" width="250" height="62" class="proc"/><text x="805" y="515.45" text-anchor="middle" font-size="17">desconto =</text><text x="805" y="536.45" text-anchor="middle" font-size="17">5% × subtotal</text>
+<rect x="280" y="635" width="400" height="50" class="proc"/><text x="480" y="665.95" text-anchor="middle" font-size="17">aluguel mensal = subtotal − desconto</text>
+<polygon points="248,712 748,712 712,778 212,778" class="io"/><text x="480" y="740.45" text-anchor="middle" font-size="17">Exibir orçamento: base, adicionais, desconto,</text><text x="480" y="761.45" text-anchor="middle" font-size="17">aluguel final, taxa e parcelas (separadas)</text>
+<polygon points="330,855 352,827 608,827 630,855 608,883 352,883" class="prep"/><text x="480" y="860.95" text-anchor="middle" font-size="17">Para mês = 1 até 12</text>
+<rect x="230" y="924" width="500" height="62" class="proc"/><text x="480" y="950.45" text-anchor="middle" font-size="17">parcela = taxa[mês] se mês ≤ n, senão R$ 0,00</text><text x="480" y="971.45" text-anchor="middle" font-size="17">total do mês = aluguel mensal + parcela</text>
+<polygon points="308,1032 688,1032 652,1088 272,1088" class="io"/><text x="480" y="1065.95" text-anchor="middle" font-size="17">Exibir projeção dos 12 meses</text>
+<path d="M270,1122 H690 V1190 C585,1208 480,1176 375,1194 S290,1200 270,1190 Z" class="doc"/><text x="480" y="1151.45" text-anchor="middle" font-size="17">GeradorCSV: gravar arquivo .csv</text><text x="480" y="1172.45" text-anchor="middle" font-size="17">(mes; aluguel; parcela; total)</text>
+<polygon points="480,1237 585,1285 480,1333 375,1285" class="dec"/><text x="480" y="1280.45" text-anchor="middle" font-size="17">Erro ao</text><text x="480" y="1301.45" text-anchor="middle" font-size="17">gravar?</text>
+<polygon points="68,1255 318,1255 282,1315 32,1315" class="io"/><text x="175" y="1280.45" text-anchor="middle" font-size="17">Exibir mensagem</text><text x="175" y="1301.45" text-anchor="middle" font-size="17">de erro</text>
+<polygon points="683,1255 933,1255 897,1315 647,1315" class="io"/><text x="790" y="1280.45" text-anchor="middle" font-size="17">Exibir caminho</text><text x="790" y="1301.45" text-anchor="middle" font-size="17">do CSV gerado</text>
+<circle cx="480" cy="1400" r="20" class="conn"/><text x="480" y="1405.95" text-anchor="middle" font-size="17" font-weight="bold">C</text>
+<polyline points="480,50 480,82" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,148 480,189" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,251 480,285" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,335 480,369" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,431 480,462" class="seta" marker-end="url(#ponta)"/>
+<polyline points="630,520 680,520" class="seta" marker-end="url(#ponta)"/>
+<text x="642" y="510" font-size="15" font-weight="bold" class="rot">Sim</text>
+<polyline points="805,551 805,620 480,620" class="seta"/>
+<polyline points="480,578 480,635" class="seta" marker-end="url(#ponta)"/>
+<text x="492" y="598" font-size="15" font-weight="bold" class="rot">Não (desconto = 0)</text>
+<polyline points="480,685 480,712" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,778 480,827" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,883 480,924" class="seta" marker-end="url(#ponta)"/>
+<text x="490" y="902" font-size="15" font-weight="bold" class="rot">cada mês</text>
+<polyline points="730,955 775,955 775,855 630,855" class="seta" marker-end="url(#ponta)"/>
+<text x="785" y="901.425" text-anchor="start" font-size="13">próximo</text><text x="785" y="917.675" text-anchor="start" font-size="13">mês</text>
+<polyline points="330,855 110,855 110,1060 290,1060" class="seta" marker-end="url(#ponta)"/>
+<text x="140" y="845" font-size="15" font-weight="bold" class="rot">após o mês 12</text>
+<polyline points="480,1088 480,1122" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,1198 480,1237" class="seta" marker-end="url(#ponta)"/>
+<polyline points="375,1285 300,1285" class="seta" marker-end="url(#ponta)"/>
+<text x="330" y="1275" font-size="15" font-weight="bold" class="rot">Sim</text>
+<polyline points="585,1285 665,1285" class="seta" marker-end="url(#ponta)"/>
+<text x="600" y="1275" font-size="15" font-weight="bold" class="rot">Não</text>
+<polyline points="175,1315 175,1355 480,1355" class="seta"/>
+<polyline points="790,1315 790,1355 480,1355" class="seta"/>
+<polyline points="480,1355 480,1380" class="seta" marker-end="url(#ponta)"/>
+<text x="510" y="1409.55" text-anchor="start" font-size="13">volta ao menu (Parte 1)</text>
+</svg>

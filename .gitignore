@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# CSVs gerados nas execuções (o exemplo oficial fica em exemplos/)
+saida/
+
+# Editor / sistema
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

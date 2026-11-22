@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1270" width="960" height="1270" font-family="Arial, Helvetica, sans-serif">
+<title>Fluxograma RentSmart - Parte 1: menu e coleta dos dados</title>
+<defs><marker id="ponta" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 z" fill="#222"/></marker></defs>
+<style>
+.term{fill:#d9ead3;stroke:#274e13;stroke-width:2}
+.proc{fill:#ffffff;stroke:#222;stroke-width:2}
+.io{fill:#fff2cc;stroke:#7f6000;stroke-width:2}
+.lv{fill:#cfe2f3;stroke:#0b5394;stroke-width:2}
+.dec{fill:#fce5cd;stroke:#b45f06;stroke-width:2}
+.prep{fill:#ead1dc;stroke:#741b47;stroke-width:2}
+.doc{fill:#d0e0e3;stroke:#134f5c;stroke-width:2}
+.conn{fill:#fff;stroke:#222;stroke-width:2}
+.seta{fill:none;stroke:#222;stroke-width:2}
+text{fill:#111}
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+<rect x="705" y="12" width="250" height="236" fill="#fafafa" stroke="#999"/>
+<text x="717" y="37.25" text-anchor="start" font-size="15" font-weight="bold">Legenda</text>
+<rect x="717" y="48" width="44" height="22" rx="11" class="term"/>
+<text x="771" y="63.9" text-anchor="start" font-size="14">Início / fim</text>
+<rect x="717" y="80" width="44" height="22" class="proc"/>
+<text x="771" y="95.9" text-anchor="start" font-size="14">Processamento</text>
+<polygon points="723,112 765,112 757,134 715,134" class="lv"/>
+<text x="771" y="119.15" text-anchor="start" font-size="14">Leitura validada: repete a</text><text x="771" y="136.65" text-anchor="start" font-size="14">pergunta até valor válido</text>
+<polygon points="723,150 765,150 757,172 715,172" class="io"/>
+<text x="771" y="165.9" text-anchor="start" font-size="14">Saída na tela</text>
+<polygon points="739,182 763,194 739,206 715,194" class="dec"/>
+<text x="771" y="199.9" text-anchor="start" font-size="14">Decisão</text>
+<circle cx="739" cy="228" r="11" class="conn"/>
+<text x="771" y="233.9" text-anchor="start" font-size="14">Conector entre as partes</text>
+<rect x="395" y="21" width="170" height="48" rx="24" class="term"/><text x="480" y="50.95" text-anchor="middle" font-size="17" font-weight="bold">Início</text>
+<rect x="315" y="100" width="330" height="50" class="proc"/><text x="480" y="130.95" text-anchor="middle" font-size="17">Exibir cabeçalho do RentSmart</text>
+<polygon points="298,182 698,182 662,248 262,248" class="lv"/><text x="480" y="210.45" text-anchor="middle" font-size="17">Ler opção do menu</text><text x="480" y="231.45" text-anchor="middle" font-size="17">[1] Novo orçamento   [0] Sair</text>
+<polygon points="480,282 590,330 480,378 370,330" class="dec"/><text x="480" y="335.95" text-anchor="middle" font-size="17">Opção = 0?</text>
+<polygon points="693,300 923,300 887,360 657,360" class="io"/><text x="790" y="325.45" text-anchor="middle" font-size="17">Exibir mensagem</text><text x="790" y="346.45" text-anchor="middle" font-size="17">de despedida</text>
+<rect x="725" y="406" width="130" height="48" rx="24" class="term"/><text x="790" y="435.95" text-anchor="middle" font-size="17" font-weight="bold">Fim</text>
+<polygon points="288,422 708,422 672,488 252,488" class="lv"/><text x="480" y="450.45" text-anchor="middle" font-size="17">Ler tipo de imóvel</text><text x="480" y="471.45" text-anchor="middle" font-size="17">[1] Apartamento [2] Casa [3] Estúdio</text>
+<polygon points="480,525 600,575 480,625 360,575" class="dec"/><text x="480" y="580.95" text-anchor="middle" font-size="17">Tipo = Estúdio?</text>
+<polygon points="58,657 358,657 322,723 22,723" class="io"/><text x="190" y="685.45" text-anchor="middle" font-size="17">Exibir aviso: estúdio</text><text x="190" y="706.45" text-anchor="middle" font-size="17">não tem quartos adicionais</text>
+<polygon points="53,762 363,762 327,828 17,828" class="lv"/><text x="190" y="790.45" text-anchor="middle" font-size="17">Contratar pacote de garagem</text><text x="190" y="811.45" text-anchor="middle" font-size="17">2 vagas por R$ 250,00? (s/n)</text>
+<polygon points="190,860 290,910 190,960 90,910" class="dec"/><text x="190" y="905.45" text-anchor="middle" font-size="17">Contratou</text><text x="190" y="926.45" text-anchor="middle" font-size="17">o pacote?</text>
+<polygon points="63,992 353,992 317,1058 27,1058" class="lv"/><text x="190" y="1020.45" text-anchor="middle" font-size="17">Ler vagas adicionais</text><text x="190" y="1041.45" text-anchor="middle" font-size="17">(0 a 8, R$ 60,00 cada)</text>
+<rect x="40" y="1099" width="300" height="62" class="proc"/><text x="190" y="1125.45" text-anchor="middle" font-size="17">Criar objeto Estudio</text><text x="190" y="1146.45" text-anchor="middle" font-size="17">(pacote, vagas adicionais)</text>
+<polygon points="498,657 818,657 782,723 462,723" class="lv"/><text x="640" y="685.45" text-anchor="middle" font-size="17">Ler quantidade de quartos</text><text x="640" y="706.45" text-anchor="middle" font-size="17">(1 ou 2)</text>
+<polygon points="498,762 818,762 782,828 462,828" class="lv"/><text x="640" y="790.45" text-anchor="middle" font-size="17">Incluir 1 vaga de garagem</text><text x="640" y="811.45" text-anchor="middle" font-size="17">por R$ 300,00? (s/n)</text>
+<polygon points="640,860 750,910 640,960 530,910" class="dec"/><text x="640" y="905.45" text-anchor="middle" font-size="17">Tipo =</text><text x="640" y="926.45" text-anchor="middle" font-size="17">Apartamento?</text>
+<polygon points="533,992 783,992 747,1058 497,1058" class="lv"/><text x="640" y="1020.45" text-anchor="middle" font-size="17">Cliente possui</text><text x="640" y="1041.45" text-anchor="middle" font-size="17">crianças? (s/n)</text>
+<rect x="500" y="1099" width="280" height="62" class="proc"/><text x="640" y="1125.45" text-anchor="middle" font-size="17">Criar objeto Apartamento</text><text x="640" y="1146.45" text-anchor="middle" font-size="17">(quartos, garagem, crianças)</text>
+<rect x="795" y="983" width="150" height="84" class="proc"/><text x="870" y="1009.95" text-anchor="middle" font-size="17">Criar objeto</text><text x="870" y="1030.95" text-anchor="middle" font-size="17">Casa (quartos,</text><text x="870" y="1051.95" text-anchor="middle" font-size="17">garagem)</text>
+<circle cx="480" cy="1235" r="20" class="conn"/><text x="480" y="1240.95" text-anchor="middle" font-size="17" font-weight="bold">A</text>
+<circle cx="60" cy="300" r="20" class="conn"/><text x="60" y="305.95" text-anchor="middle" font-size="17" font-weight="bold">C</text>
+<polyline points="480,69 480,100" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,150 480,182" class="seta" marker-end="url(#ponta)"/>
+<polyline points="60,280 60,215 280,215" class="seta" marker-end="url(#ponta)"/>
+<text x="60" y="338.425" text-anchor="middle" font-size="13">retorno ao</text><text x="60" y="354.675" text-anchor="middle" font-size="13">menu</text>
+<polyline points="480,248 480,282" class="seta" marker-end="url(#ponta)"/>
+<polyline points="590,330 675,330" class="seta" marker-end="url(#ponta)"/>
+<text x="600" y="320" font-size="15" font-weight="bold" class="rot">Sim</text>
+<polyline points="790,360 790,406" class="seta" marker-end="url(#ponta)"/>
+<polyline points="480,378 480,422" class="seta" marker-end="url(#ponta)"/>
+<text x="490" y="400" font-size="15" font-weight="bold" class="rot">Não</text>
+<polyline points="480,488 480,525" class="seta" marker-end="url(#ponta)"/>
+<polyline points="360,575 190,575 190,657" class="seta" marker-end="url(#ponta)"/>
+<text x="300" y="565" font-size="15" font-weight="bold" class="rot">Sim</text>
+<polyline points="600,575 640,575 640,657" class="seta" marker-end="url(#ponta)"/>
+<text x="615" y="565" font-size="15" font-weight="bold" class="rot">Não</text>
+<polyline points="190,723 190,762" class="seta" marker-end="url(#ponta)"/>
+<polyline points="190,828 190,860" class="seta" marker-end="url(#ponta)"/>
+<polyline points="190,960 190,992" class="seta" marker-end="url(#ponta)"/>
+<text x="200" y="982" font-size="15" font-weight="bold" class="rot">Sim</text>
+<polyline points="290,910 378,910 378,1130 340,1130" class="seta" marker-end="url(#ponta)"/>
+<text x="296" y="900" font-size="15" font-weight="bold" class="rot">Não</text>
+<text x="386" y="1033.3" text-anchor="start" font-size="13">vagas</text><text x="386" y="1049.55" text-anchor="start" font-size="13">adicionais</text><text x="386" y="1065.8" text-anchor="start" font-size="13">= 0</text>
+<polyline points="190,1058 190,1099" class="seta" marker-end="url(#ponta)"/>
+<polyline points="640,723 640,762" class="seta" marker-end="url(#ponta)"/>
+<polyline points="640,828 640,860" class="seta" marker-end="url(#ponta)"/>
+<polyline points="640,960 640,992" class="seta" marker-end="url(#ponta)"/>
+<text x="650" y="982" font-size="15" font-weight="bold" class="rot">Sim</text>
+<polyline points="750,910 870,910 870,983" class="seta" marker-end="url(#ponta)"/>
+<text x="760" y="900" font-size="15" font-weight="bold" class="rot">Não</text>
+<polyline points="640,1058 640,1099" class="seta" marker-end="url(#ponta)"/>
+<polyline points="190,1161 190,1190 480,1190" class="seta"/>
+<polyline points="640,1161 640,1190 480,1190" class="seta"/>
+<polyline points="870,1067 870,1190 640,1190" class="seta"/>
+<polyline points="480,1190 480,1215" class="seta" marker-end="url(#ponta)"/>
+<text x="510" y="1244.55" text-anchor="start" font-size="13">continua na Parte 2</text>
+</svg>

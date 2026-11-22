@@ -1,0 +1,40 @@
+test_base_sem_adicionais_com_criancas (test_regras.TestApartamento.test_base_sem_adicionais_com_criancas) ... ok
+test_desconto_aplicado_depois_dos_adicionais (test_regras.TestApartamento.test_desconto_aplicado_depois_dos_adicionais) ... ok
+test_desconto_dois_quartos_sem_garagem (test_regras.TestApartamento.test_desconto_dois_quartos_sem_garagem) ... ok
+test_desconto_sem_criancas_sem_adicionais (test_regras.TestApartamento.test_desconto_sem_criancas_sem_adicionais) ... ok
+test_dois_quartos_e_garagem (test_regras.TestApartamento.test_dois_quartos_e_garagem) ... ok
+test_garagem (test_regras.TestApartamento.test_garagem) ... ok
+test_segundo_quarto (test_regras.TestApartamento.test_segundo_quarto) ... ok
+test_sem_desconto_quando_ha_criancas (test_regras.TestApartamento.test_sem_desconto_quando_ha_criancas) ... ok
+test_base (test_regras.TestCasa.test_base) ... ok
+test_casa_nunca_tem_desconto (test_regras.TestCasa.test_casa_nunca_tem_desconto) ... ok
+test_dois_quartos_e_garagem (test_regras.TestCasa.test_dois_quartos_e_garagem) ... ok
+test_garagem (test_regras.TestCasa.test_garagem) ... ok
+test_segundo_quarto (test_regras.TestCasa.test_segundo_quarto) ... ok
+test_base_sem_garagem (test_regras.TestEstudio.test_base_sem_garagem) ... ok
+test_estudio_nao_tem_desconto (test_regras.TestEstudio.test_estudio_nao_tem_desconto) ... ok
+test_limite_maximo_de_vagas_adicionais (test_regras.TestEstudio.test_limite_maximo_de_vagas_adicionais) ... ok
+test_pacote_com_vagas_adicionais (test_regras.TestEstudio.test_pacote_com_vagas_adicionais) ... ok
+test_pacote_duas_vagas (test_regras.TestEstudio.test_pacote_duas_vagas) ... ok
+test_vagas_adicionais_exigem_pacote (test_regras.TestEstudio.test_vagas_adicionais_exigem_pacote) ... ok
+test_vagas_adicionais_negativas (test_regras.TestEstudio.test_vagas_adicionais_negativas) ... ok
+test_conteudo_do_csv (test_regras.TestGeradorCSV.test_conteudo_do_csv) ... ok
+test_dois_orcamentos_seguidos_geram_dois_csv (test_regras.TestInterface.test_dois_orcamentos_seguidos_geram_dois_csv) ... ok
+test_estudio_pelo_terminal (test_regras.TestInterface.test_estudio_pelo_terminal) ... ok
+test_fluxo_completo_com_entradas_invalidas (test_regras.TestInterface.test_fluxo_completo_com_entradas_invalidas) ... ok
+test_formatacao (test_regras.TestMoeda.test_formatacao) ... ok
+test_doze_meses_com_taxa_apenas_nos_meses_parcelados (test_regras.TestProjecao.test_doze_meses_com_taxa_apenas_nos_meses_parcelados) ... ok
+test_projecao_com_taxa_a_vista (test_regras.TestProjecao.test_projecao_com_taxa_a_vista) ... ok
+test_parcela_do_mes (test_regras.TestTaxaContratual.test_parcela_do_mes) ... ok
+test_parcelamentos_exatos (test_regras.TestTaxaContratual.test_parcelamentos_exatos) ... ok
+test_parcelas_fora_do_intervalo (test_regras.TestTaxaContratual.test_parcelas_fora_do_intervalo) ... ok
+test_parcelas_tipo_invalido (test_regras.TestTaxaContratual.test_parcelas_tipo_invalido) ... ok
+test_soma_sempre_igual_ao_total (test_regras.TestTaxaContratual.test_soma_sempre_igual_ao_total) ... ok
+test_tres_parcelas_soma_exata (test_regras.TestTaxaContratual.test_tres_parcelas_soma_exata) ... ok
+test_imovel_e_abstrato (test_regras.TestValidacoesImovel.test_imovel_e_abstrato) ... ok
+test_quartos_invalidos (test_regras.TestValidacoesImovel.test_quartos_invalidos) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.010s
+
+OK

@@ -1,0 +1,55 @@
+============================================================
+       RentSmart - Orçamento de Locação | R.M Imóveis       
+============================================================
+
+MENU PRINCIPAL
+[1] Novo orçamento
+[0] Sair
+Opção: 
+Tipo de imóvel:
+[1] Apartamento (R$ 700,00)
+[2] Casa (R$ 900,00)
+[3] Estúdio (R$ 1.200,00)
+Opção: Quantidade de quartos [1 ou 2]: Deseja incluir 1 vaga de garagem por R$ 300,00? (s/n): O cliente possui crianças? (s/n): Em quantas parcelas deseja pagar a taxa contratual de R$ 2.000,00? (1 a 5): 
+============================================================
+                    ORÇAMENTO DE LOCAÇÃO                    
+============================================================
+Imóvel: Apartamento com 2 quarto(s), com 1 vaga de garagem; cliente não possui crianças
+------------------------------------------------------------
+ALUGUEL MENSAL
+  Aluguel-base (Apartamento)                       R$ 700,00
+  + Segundo quarto                                 R$ 200,00
+  + Vaga de garagem (1 vaga)                       R$ 300,00
+  Subtotal com adicionais                        R$ 1.200,00
+  - Desconto de 5% (cliente sem crianças)          -R$ 60,00
+  ALUGUEL MENSAL FINAL                           R$ 1.140,00
+------------------------------------------------------------
+TAXA CONTRATUAL (cobrada à parte do aluguel)
+  Valor total da taxa                            R$ 2.000,00
+  Parcelamento: 3x
+  Parcela 1 (mês 1)                                R$ 666,67
+  Parcela 2 (mês 2)                                R$ 666,67
+  Parcela 3 (mês 3)                                R$ 666,66
+============================================================
+
+PROJEÇÃO DOS 12 PRIMEIROS MESES
+  Mês |        Aluguel | Taxa contratual |          Total
+    1 |    R$ 1.140,00 |       R$ 666,67 |    R$ 1.806,67
+    2 |    R$ 1.140,00 |       R$ 666,67 |    R$ 1.806,67
+    3 |    R$ 1.140,00 |       R$ 666,66 |    R$ 1.806,66
+    4 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+    5 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+    6 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+    7 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+    8 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+    9 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+   10 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+   11 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+   12 |    R$ 1.140,00 |         R$ 0,00 |    R$ 1.140,00
+
+Arquivo CSV gerado em: C:\Users\USER\RentSmart\saida\projecao_12_meses_20261122_115801.csv
+
+MENU PRINCIPAL
+[1] Novo orçamento
+[0] Sair
+Opção: Obrigado por usar o RentSmart. Até logo!
