@@ -7,8 +7,8 @@ Aplicação de terminal que automatiza os orçamentos de locação da imobiliár
 (apartamentos, casas e estúdios): calcula adicionais e descontos, apresenta o orçamento detalhado,
 mostra a taxa contratual separada do aluguel e gera um **CSV com a projeção dos 12 primeiros meses**.
 
-> Repositório: `COLE_AQUI_O_LINK_DO_GITHUB`
-> Vídeo pitch: `COLE_AQUI_O_LINK_DO_YOUTUBE`
+> Repositório: `https://github.com/V1tor123/rentsmart`
+> Vídeo pitch: `https://youtu.be/NQr_yCqQ74o`
 
 ---
 
@@ -113,40 +113,6 @@ aplicado depois dos adicionais), regras de garagem do estúdio, parcelamentos de
 o caso 2.000 ÷ 3), valores inválidos, projeção de 12 meses, conteúdo do CSV e o fluxo completo do
 terminal simulando um usuário que digita respostas inválidas.
 
----
-
-## Como publicar no GitHub
-
-1. Crie uma conta em <https://github.com> (se ainda não tiver) e instale o Git:
-   `winget install Git.Git` (feche e reabra o VS Code depois).
-2. Configure seu nome e e-mail (uma única vez):
-   ```powershell
-   git config --global user.name "Seu Nome"
-   git config --global user.email "seu-email@exemplo.com"
-   ```
-3. No GitHub, clique em **New repository**, nome sugerido `rentsmart`, visibilidade **Public**,
-   **sem** marcar README/.gitignore (o projeto já tem). Clique em **Create repository**.
-4. No terminal do VS Code, dentro da pasta `RentSmart`:
-   ```powershell
-   git init
-   git add .
-   git commit -m "RentSmart: sistema de orçamento de locação com POO"
-   git branch -M main
-   git remote add origin https://github.com/SEU_USUARIO/rentsmart.git
-   git push -u origin main
-   ```
-   Na primeira vez, o Git abre o navegador para você autorizar o acesso.
-5. Abra o link do repositório no navegador e confira se aparecem `main.py`, `rentsmart/`, `tests/`,
-   `exemplos/`, `docs/` e o README.
-6. Copie o link e cole no topo deste README (campo "Repositório"), depois:
-   ```powershell
-   git add README.md
-   git commit -m "Adiciona links do repositório e do vídeo"
-   git push
-   ```
-
-Alternativa sem linha de comando: no repositório vazio do GitHub, use **"uploading an existing file"** e
-arraste o conteúdo da pasta `RentSmart` (exceto `saida/` e `__pycache__/`).
 
 ---
 
